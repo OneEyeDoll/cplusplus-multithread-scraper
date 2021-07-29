@@ -19,7 +19,7 @@ int main(int argc, const char** argv){
 
     //app name setup to argparse lib
 
-    parser.appName("MassScraper");
+    parser.appName("MultiThreaded Scraper");
 
     //add arguments to the library, they will be retrieved later
     parser.addArgument("-t","--threads",1,false);
