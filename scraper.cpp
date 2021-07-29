@@ -37,7 +37,7 @@ void Scraper::start_scraping(){
                         already_seen.push_back(filename);//adding file to blacklist
                 //response output to file
 
-                        out.open("scraped/"+filename);
+                        out.open(filename);
                         out<<body;
                         out.close();
                 //regex url search
@@ -78,7 +78,7 @@ void Scraper::scraping_function(std::string url){
                     mtx.unlock();//critical section exit
                 //response output to file
 
-                    out.open("scraped/"+filename);
+                    out.open(filename);
                     out<<body;
                     out.close();
 
